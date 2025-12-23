@@ -1,0 +1,17 @@
+port 
+
+
+import socket
+
+ip = "127.0.0.1"
+start, end = 70, 90
+
+for port in range(start, end + 1):
+    s = socket.socket()
+    s.settimeout(0.5)
+    try:
+        s.connect((ip, port))
+        print(port, "OPEN")
+    except:
+        print(port, "CLOSED")
+    s.close()
