@@ -21,3 +21,5 @@ encryption = casear_de(messege,shift,mode='encrpt')
 print(f"Encrypt messege:{encryption}")
 decryption = casear_de(messege,shift,mode='decrpt')
 print(f"decrypt messege:{decryption}")
+
+output =====
